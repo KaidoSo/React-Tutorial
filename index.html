@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>React Tutorial</title>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        let innerSpan = React.createElement("span",null,"React by Kaido");
+                
+        let el = React.createElement("h1",null, innerSpan);
+
+        // jsx
+
+        let myel = (
+            <div>
+                <h1>
+                    <span>Hello JSX</span>
+                </h1>
+            </div>);
+
+        ReactDOM.render(myel, document.getElementById("root"));
+
+
+    </script>
+</body>
+</html>
